@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informasi dan source code Web App Data Mahasiswa">
+    <title>Informasi & Source Code — Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="code-page">
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">✦</span>
+            <span>Data Mahasiswa</span>
+        </a>
+
+        <nav class="nav">
+            <a class="nav-link" href="index.html">Aplikasi</a>
+            <a class="nav-link active" href="informasi.html">Informasi &amp; Source Code</a>
+        </nav>
+
+        <a class="header-cta" href="index.html">Kembali ke App <span>→</span></a>
+    </header>
+
+    <main>
+        <section class="code-hero">
+            <p class="eyebrow">INFORMASI &amp; SOURCE CODE</p>
+            <h1>Kenali bagaimana aplikasi ini bekerja.</h1>
+            <p>
+                Pilih file di bawah untuk melihat kode yang digunakan.
+                Halaman ini juga menjelaskan peran JavaScript dalam proses
+                mengambil input, menghitung nilai, dan menentukan kelulusan.
+            </p>
+        </section>
+
+        <section class="code-wrap">
+            <div class="code-tabs" role="tablist" aria-label="Source code">
+                <button class="code-tab active" data-target="html" role="tab">index.html</button>
+                <button class="code-tab" data-target="css" role="tab">style.css</button>
+                <button class="code-tab" data-target="javascript" role="tab">script.js</button>
+            </div>
+
+            <article class="code-panel active" id="html">
+                <div class="code-card">
+                    <div class="code-card-head">
+                        <span>index.html · Struktur halaman</span>
+                        <button class="copy-button" data-copy="htmlCode">Salin kode</button>
+                    </div>
+                    <pre><code id="htmlCode"></code></pre>
+                </div>
+
+                <div class="explanation">
+                    <h2>Apa fungsi HTML?</h2>
+                    <p>
+                        HTML digunakan untuk membuat struktur atau kerangka halaman.
+                        Di aplikasi ini HTML membuat form nama, NIM, nilai Tugas, UTS,
+                        UAS, tombol hitung, dan area hasil.
+                    </p>
+                </div>
+            </article>
+
+            <article class="code-panel" id="css">
+                <div class="code-card">
+                    <div class="code-card-head">
+                        <span>style.css · Tampilan aplikasi</span>
+                        <button class="copy-button" data-copy="cssCode">Salin kode</button>
+                    </div>
+                    <pre><code id="cssCode"></code></pre>
+                </div>
+
+                <div class="explanation">
+                    <h2>Apa fungsi CSS?</h2>
+                    <p>
+                        CSS mengatur warna, ukuran, jarak, layout, tombol, card,
+                        responsive design, dan visual halaman. Desainnya dibuat
+                        dengan pendekatan editorial minimal seperti referensi
+                        Buffer: background terang, grid tipis, tipografi besar,
+                        rounded card, dan aksen hijau.
+                    </p>
+                </div>
+            </article>
+
+            <article class="code-panel" id="javascript">
+                <div class="code-card">
+                    <div class="code-card-head">
+                        <span>script.js · Logika aplikasi</span>
+                        <button class="copy-button" data-copy="jsCode">Salin kode</button>
+                    </div>
+                    <pre><code id="jsCode"></code></pre>
+                </div>
+
+                <div class="explanation">
+                    <h2>Bagaimana JavaScript digunakan?</h2>
+                    <p>
+                        JavaScript adalah bagian yang membuat halaman menjadi interaktif.
+                        Pada aplikasi ini, JavaScript melakukan empat proses utama:
+                    </p>
+
+                    <ol class="explanation-list">
+                        <li>
+                            <span class="number">1</span>
+                            <div>
+                                <b>Mengambil input</b>
+                                <span>Nama, NIM, Tugas, UTS, dan UAS diambil dari elemen HTML menggunakan <code>getElementById()</code>.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="number">2</span>
+                            <div>
+                                <b>Mengubah nilai menjadi angka</b>
+                                <span><code>Number()</code> digunakan agar nilai input dapat dihitung sebagai angka.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="number">3</span>
+                            <div>
+                                <b>Menghitung nilai akhir</b>
+                                <span>JavaScript menerapkan bobot Tugas 30%, UTS 30%, dan UAS 40%.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="number">4</span>
+                            <div>
+                                <b>Menentukan kelulusan</b>
+                                <span>Jika nilai akhir lebih dari 75 maka tampil <b>LULUS</b>. Selain itu tampil <b>TIDAK LULUS</b>.</span>
+                            </div>
+                        </li>
+                    </ol>
+
+                    <div class="formula-box">
+                        Nilai Akhir = (Tugas × 0.30) + (UTS × 0.30) + (UAS × 0.40)
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>Data Mahasiswa</strong>
+            <span>Web App Development · JavaScript</span>
+        </div>
+        <a href="index.html">← Kembali ke Aplikasi</a>
+    </footer>
+
+    <script src="informasi.js"></script>
+</body>
+</html>

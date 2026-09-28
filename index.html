@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web App Data Mahasiswa - Perhitungan nilai dengan JavaScript">
+    <title>Data Mahasiswa — Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Data Mahasiswa">
+            <span class="brand-mark">✦</span>
+            <span>Data Mahasiswa</span>
+        </a>
+
+        <nav class="nav">
+            <a class="nav-link active" href="index.html">Aplikasi</a>
+            <a class="nav-link" href="informasi.html">Informasi &amp; Source Code</a>
+        </nav>
+
+        <a class="header-cta" href="informasi.html">Pelajari Coding <span>→</span></a>
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <div class="hero-content">
+                <p class="eyebrow">WEB APP DEVELOPMENT</p>
+                <h1>Nilai jadi<br><span>lebih mudah dihitung.</span></h1>
+                <p class="hero-copy">
+                    Aplikasi sederhana untuk menghitung nilai akhir mahasiswa
+                    menggunakan HTML, CSS, dan JavaScript.
+                </p>
+
+                <a class="hero-button" href="#aplikasi">
+                    Mulai menghitung <span>→</span>
+                </a>
+
+                <p class="micro-copy">Tugas 30% · UTS 30% · UAS 40%</p>
+            </div>
+        </section>
+
+        <section class="app-section" id="aplikasi">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">CALCULATOR</p>
+                    <h2>Data &amp; Nilai Mahasiswa</h2>
+                </div>
+                <p>Masukkan nilai, lalu biarkan JavaScript menghitung hasilnya.</p>
+            </div>
+
+            <div class="app-card">
+                <form id="formNilai">
+                    <div class="form-grid student-grid">
+                        <div class="form-group">
+                            <label for="nama">Nama Mahasiswa</label>
+                            <input type="text" id="nama" value="Umar Samawi Tashar"
+                                   placeholder="Masukkan nama mahasiswa" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nim">NIM</label>
+                            <input type="text" id="nim" value="24202039"
+                                   placeholder="Masukkan NIM" required>
+                        </div>
+                    </div>
+
+                    <div class="score-heading">
+                        <div>
+                            <h3>Komponen Nilai</h3>
+                            <p>Bobot setiap komponen sudah ditentukan.</p>
+                        </div>
+                        <span class="formula-pill">30% + 30% + 40% = 100%</span>
+                    </div>
+
+                    <div class="form-grid score-grid">
+                        <div class="score-box">
+                            <label for="tugas">Nilai Tugas <small>30%</small></label>
+                            <input type="number" id="tugas" value="75" min="0" max="100" required>
+                        </div>
+
+                        <div class="score-box">
+                            <label for="uts">Nilai UTS <small>30%</small></label>
+                            <input type="number" id="uts" value="98" min="0" max="100" required>
+                        </div>
+
+                        <div class="score-box">
+                            <label for="uas">Nilai UAS <small>40%</small></label>
+                            <input type="number" id="uas" value="90" min="0" max="100" required>
+                        </div>
+                    </div>
+
+                    <button class="calculate-button" type="submit">
+                        Hitung Nilai <span>→</span>
+                    </button>
+                </form>
+
+                <div class="result-panel" aria-live="polite">
+                    <div class="result-top">
+                        <div>
+                            <p class="eyebrow">HASIL PENILAIAN</p>
+                            <h3 id="hasilNama">Umar Samawi Tashar</h3>
+                            <p id="hasilNim">NIM 24202039</p>
+                        </div>
+                        <div class="status-badge" id="keterangan">LULUS</div>
+                    </div>
+
+                    <div class="result-scores">
+                        <div><span>Tugas</span><strong id="hasilTugas">75</strong></div>
+                        <div><span>UTS</span><strong id="hasilUts">98</strong></div>
+                        <div><span>UAS</span><strong id="hasilUas">90</strong></div>
+                    </div>
+
+                    <div class="final-score">
+                        <div>
+                            <span>Nilai Akhir</span>
+                            <p>Hasil dari Tugas 30% + UTS 30% + UAS 40%</p>
+                        </div>
+                        <strong id="nilaiAkhir">87.90</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-section">
+            <div class="learning-card">
+                <p class="eyebrow">BELAJAR DARI PROGRAM</p>
+                <h2>Tiga file. Satu aplikasi.</h2>
+                <p>
+                    HTML membuat struktur halaman, CSS mengatur tampilan,
+                    dan JavaScript menjalankan proses perhitungan nilai.
+                </p>
+
+                <div class="tech-grid">
+                    <a href="informasi.html#html" class="tech-card">
+                        <span class="tech-icon html-icon">&lt;/&gt;</span>
+                        <span><b>index.html</b><small>Struktur halaman</small></span>
+                        <span>→</span>
+                    </a>
+                    <a href="informasi.html#css" class="tech-card">
+                        <span class="tech-icon css-icon">#</span>
+                        <span><b>style.css</b><small>Tampilan &amp; layout</small></span>
+                        <span>→</span>
+                    </a>
+                    <a href="informasi.html#javascript" class="tech-card">
+                        <span class="tech-icon js-icon">JS</span>
+                        <span><b>script.js</b><small>Logika perhitungan</small></span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>Data Mahasiswa</strong>
+            <span>Web App Development · JavaScript</span>
+        </div>
+        <a href="informasi.html">Lihat Source Code →</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
