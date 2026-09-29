@@ -1,48 +1,55 @@
 # Data Mahasiswa — Web App Development
 
-Web app sederhana untuk tugas Web App Development menggunakan:
+Web app sederhana untuk menghitung nilai akhir mahasiswa menggunakan HTML, CSS, dan JavaScript.
 
-- HTML
-- CSS
-- JavaScript
-- GitHub Pages
+## Struktur project
 
-## File
-
-- `index.html` — halaman utama dan struktur aplikasi
-- `style.css` — desain dan responsive layout
-- `script.js` — logika perhitungan nilai
-- `informasi.html` — halaman informasi dan source code
-- `informasi.js` — menampilkan source code dan fitur copy
+```text
+index.html       # Halaman aplikasi utama
+style.css        # Semua styling
+script.js        # Logika perhitungan nilai
+informasi.html   # Materi belajar + source code
+informasi.js     # Tab source code, copy code, dan tombol W3Schools TryIt
+README.md        # Dokumentasi project
+```
 
 ## Rumus
 
+```text
 Nilai Akhir = (Tugas × 30%) + (UTS × 30%) + (UAS × 40%)
+```
 
-Keterangan:
+Ketentuan:
 
 - Nilai akhir > 75 → LULUS
 - Nilai akhir <= 75 → TIDAK LULUS
 
-## Data contoh
+## Materi belajar
 
-Nama: Umar Samawi Tashar
-NIM: 24202039
-Tugas: 75
-UTS: 98
-UAS: 90
+Buka `informasi.html` untuk mempelajari program secara berurutan:
 
-Nilai akhir = 87.90
-Keterangan = LULUS
+1. HTML — struktur halaman
+2. CSS — tampilan
+3. JavaScript — mengambil input
+4. JavaScript — menghitung nilai
+5. JavaScript — if/else
+6. DOM — menampilkan output
+7. Class CSS — mengubah warna status
 
-## Deploy ke GitHub Pages
+## W3Schools TryIt
 
-1. Buat repository baru di GitHub.
-2. Upload semua file ke root repository.
-3. Buka Settings → Pages.
-4. Source: Deploy from a branch.
-5. Branch: `main`.
-6. Folder: `/ (root)`.
-7. Klik Save.
+Pada halaman `informasi.html` tersedia tombol **Buka W3Schools TryIt**.
 
-Desain mengambil inspirasi dari pendekatan visual website Buffer yang menampilkan hero besar, grid background, rounded elements, dan aksen hijau; implementasinya dibuat ulang secara mandiri untuk tugas ini.
+Tombol tersebut menyalin kode lengkap Program Data Mahasiswa ke clipboard, kemudian membuka:
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_editor
+
+Di editor W3Schools, tekan **Ctrl+V** (Windows) atau **Cmd+V** (Mac), kemudian klik **Run**.
+
+## GitHub Pages
+
+Project ini tidak membutuhkan Node.js atau build process.
+
+Upload semua file ke repository GitHub, lalu aktifkan:
+
+`Settings → Pages → Deploy from a branch → main → / (root)`

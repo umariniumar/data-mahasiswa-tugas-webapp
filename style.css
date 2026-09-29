@@ -783,3 +783,217 @@ pre {
         letter-spacing: -3px;
     }
 }
+
+/* ==================================================
+   W3SCHOOLS TRYIT + MATERI BELAJAR
+   ================================================== */
+
+.tryit-section {
+    width: min(1080px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 0 0 64px;
+}
+
+.tryit-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 30px;
+    border: 1px solid rgba(23, 59, 55, .12);
+    border-radius: 18px;
+    background: #173b37;
+    color: #fff;
+}
+
+.tryit-card h2 {
+    margin: 0;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.05;
+    letter-spacing: -.03em;
+}
+
+.tryit-card p:not(.eyebrow) {
+    max-width: 690px;
+    margin: 14px 0 0;
+    color: rgba(255,255,255,.74);
+}
+
+.tryit-card .eyebrow {
+    color: #a9eb96;
+}
+
+.tryit-button {
+    flex: 0 0 auto;
+    min-height: 48px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 9px;
+    background: #a9eb96;
+    color: #173b37;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.tryit-button:hover {
+    background: #c1f4b2;
+}
+
+.tryit-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.tryit-steps > div {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    column-gap: 10px;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid rgba(23,59,55,.1);
+    border-radius: 12px;
+    background: #fff;
+}
+
+.tryit-steps span {
+    grid-row: 1 / span 2;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #eff8ec;
+    color: #173b37;
+    font-weight: 800;
+}
+
+.tryit-steps b {
+    font-size: 14px;
+}
+
+.tryit-steps small {
+    color: #66736f;
+}
+
+.learning-order {
+    width: min(1080px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 0 0 72px;
+}
+
+.learning-order-head {
+    max-width: 720px;
+    margin-bottom: 26px;
+}
+
+.learning-order-head h2 {
+    margin: 0;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.05;
+    letter-spacing: -.03em;
+}
+
+.learning-order-head p:not(.eyebrow) {
+    color: #66736f;
+    margin: 12px 0 0;
+}
+
+.learning-order-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.learning-order-grid article {
+    padding: 22px;
+    border: 1px solid rgba(23,59,55,.1);
+    border-radius: 14px;
+    background: #fff;
+}
+
+.learning-order-grid article > span {
+    color: #66736f;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .1em;
+}
+
+.learning-order-grid h3 {
+    margin: 8px 0 8px;
+    color: #173b37;
+    font-size: 22px;
+}
+
+.learning-order-grid p {
+    margin: 0 0 14px;
+    color: #66736f;
+}
+
+.learning-order-grid code {
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background: #eff8ec;
+    color: #173b37;
+    font-size: 12px;
+}
+
+.learning-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 14px;
+    background: #eff8ec;
+    color: #173b37;
+}
+
+.learning-flow span {
+    font-size: 22px;
+}
+
+@media (max-width: 760px) {
+    .tryit-section,
+    .learning-order {
+        width: min(100% - 28px, 1080px);
+    }
+
+    .tryit-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tryit-button {
+        width: 100%;
+    }
+
+    .tryit-steps,
+    .learning-order-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.learning-action {
+    margin: 22px 0 16px;
+}
+
+.tryit-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 16px;
+    border-radius: 8px;
+    background: #173b37;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.tryit-link:hover {
+    background: #24564f;
+}
